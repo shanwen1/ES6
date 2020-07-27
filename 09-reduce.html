@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+    // let arr=[12,69,180,8763]
+    // arr.reduce(function (a,b,c) {
+    //   alert(a+','+b+','+c)
+    // })
+
+    // let arr=[12,69,180,8763]
+    // arr.reduce(function (tmp,item,index) {
+    //   alert(tmp+','+item+','+index)
+    // })
+
+    // arr=[12,69,180,8763]
+    // let result=arr.reduce(function (tmp,item,index) {
+    //   // alert(tmp+','+item+','+index)
+    //   return tmp+item;
+    // })
+    // alert(result)
+
+    arr=[12,69,180,8763]
+    let result=arr.reduce((tmp,item,index)=>{
+      if (index!==arr.length-1){
+        return tmp+item;
+      }else{
+        return (tmp+item)/arr.length;
+      }
+    })
+    alert(result)
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

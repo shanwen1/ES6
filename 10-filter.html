@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+   // let arr=[12,5,8,99,27,36,75]
+   //  let result=arr.filter(item=>{
+   //   if(item%3==0){
+   //     return true
+   //   } else {
+   //      return false
+   //   }
+   //  })
+   //  alert(result)
+
+   // let arr=[12,5,8,99,27,36,75]
+   // let result=arr.filter(item=>{
+   //   return item%3==0
+   // })
+   // alert(result)
+
+   // let arr=[12,5,8,99,27,36,75]
+   // let result=arr.filter(item=>item%3==0)
+   // alert(result)//输出：警告框12,99,27,36,75
+
+   let arr=[
+     {title:'男士衬衫',price:75},
+     {title:'女士包',price:57842},
+     {title:'男士鞋',price:65},
+     {title:'女士鞋',price:27531}
+   ]
+
+  let result=arr.filter(json=>json.price>=10000)
+  console.log(result)
+    // alert(result)
+  </script>
+</head>
+<body>
+
+</body>
+</html>

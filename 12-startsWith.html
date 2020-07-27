@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+    // let str='sdffsdfsdfsdf'
+    // alert(str.startsWith("s"))//输出:警告框true
+
+    let str='https://www.baidu.com'
+    if (str.startsWith('http://')){
+      alert('普通网址')
+    } else if (str.startsWith('https://')){
+      alert('加密网址')
+    } else if (str.startsWith('git://')){
+      alert('git地址')
+    }else {
+      alert('其他')
+    }//输出:加密网址
+  </script>
+</head>
+<body>
+
+</body>
+</html>

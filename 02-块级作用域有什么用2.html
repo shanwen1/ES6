@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title></title>
+    <script>
+      window.onload=function () {
+        let aBtn=document.getElementsByTagName('input')
+        for (let i=0; i<aBtn.length; i++){
+            aBtn[i].onclick = function () {
+              alert(i)
+            }
+        }
+      }
+    </script>
+  </head>
+  <body>
+  <input type = "button" value="按钮1">
+  <input type = "button" value="按钮2">
+  <input type = "button" value="按钮3">
+  </body>
+</html>

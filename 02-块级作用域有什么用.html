@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title></title>
+    <script>
+      // window.onload=function () {
+      //    var aBtn=document.getElementsByTagName('input')
+      // 因为var没有块级作用域
+      // 变量i是var命令声明的，在全局范围内都有效，所以全局只有一个变量i
+      // 每一次循环，变量i的值都会发生改变
+      // 而循环内被赋给数组a的函数内部的console.log(i)
+      // 里面的i指向的就是全局的i
+      // 也就是说，所有数组a的成员里面的i
+      // 指向的都是同一个i，导致运行时输出的是最后一轮的i的值
+      // 也就是3
+      //   for (var i=0; i<aBtn.length; i++){
+      //     aBtn[i].onclick = function () {
+      //       alert(i)
+      //     }
+      //   }
+      // }
+
+      window.onload=function () {
+        var aBtn=document.getElementsByTagName('input')
+        //var只认函数这一层，才能分开作用域
+        for (var i=0; i<aBtn.length; i++){
+          (function (i) {
+            aBtn[i].onclick = function () {
+              alert(i)
+            }
+          })(i)
+        }
+      }
+
+
+    </script>
+  </head>
+  <body>
+  <input type = "button" value="按钮1">
+  <input type = "button" value="按钮2">
+  <input type = "button" value="按钮3">
+
+  </body>
+</html>
